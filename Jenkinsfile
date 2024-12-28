@@ -26,7 +26,7 @@ pipeline {
             steps {
                 script {
                     try {
-                        bat '"D:\\KPI\\SP\\lab4\bihdash-test\\x64\Debug\\bihdash-test.exe"'
+                        bat '"D:\\KPI\\SP\\lab4\\bihdash-test\\x64\\Debug\\bihdash-test.exe"'
                     } catch (Exception e) {
                         echo "Test error: ${e.message}"
                         currentBuild.result = 'FAILURE'
